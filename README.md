@@ -4,14 +4,18 @@ Output is
 ```
 Calling foo()
 foo()
-foo() promise
+in foo promise callback
+end of foo promise callback
 Done foo()
-Promise { undefined }
+Promise { <pending> }
 Then-ing promise
+resolving foo promise
+resolved foo promise
 Promise complete
 ```
 
 Expected output is
+<!-- FIXME -->
 ```
 Calling foo()
 foo()

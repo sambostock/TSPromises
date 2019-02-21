@@ -2,8 +2,13 @@
 function foo() {
     console.log('foo()');
     return new Promise(function (resolve, reject) {
-        console.log('foo() promise');
-        resolve();
+        console.log('in foo promise callback');
+        setTimeout(function () {
+            console.log('resolving foo promise');
+            resolve();
+            console.log('resolved foo promise');
+        }, 0);
+        console.log('end of foo promise callback');
     });
 }
 console.log('Calling foo()');
