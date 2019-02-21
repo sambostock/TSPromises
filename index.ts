@@ -3,6 +3,7 @@ function foo(): Promise<void> {
 
 	return new Promise<void>((resolve: () => void, reject: () => void) => {
 		console.log('foo() promise');
+		resolve();
 	});
 }
 
