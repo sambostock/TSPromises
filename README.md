@@ -8,9 +8,10 @@ in foo promise callback
 end of foo promise callback
 Done foo()
 Promise { <pending> }
-Then-ing promise
+setting timeout to then promise
 resolving foo promise
 resolved foo promise
+Then-ing promise
 Promise complete
 ```
 

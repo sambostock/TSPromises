@@ -21,7 +21,13 @@ console.log('Done foo()');
 
 console.log(p);
 
-console.log('Then-ing promise')
-p.then(() => {
-	console.log('Promise complete');
-});
+console.log('setting timeout to then promise');
+setTimeout(
+	  () => {
+		console.log('Then-ing promise')
+		p.then(() => {
+			console.log('Promise complete');
+		});
+	},
+	10,
+);

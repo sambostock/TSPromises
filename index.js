@@ -15,7 +15,10 @@ console.log('Calling foo()');
 var p = foo();
 console.log('Done foo()');
 console.log(p);
-console.log('Then-ing promise');
-p.then(function () {
-    console.log('Promise complete');
-});
+console.log('setting timeout to then promise');
+setTimeout(function () {
+    console.log('Then-ing promise');
+    p.then(function () {
+        console.log('Promise complete');
+    });
+}, 10);
